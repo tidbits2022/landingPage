@@ -11,8 +11,6 @@
 
 html {
     font-family: Montserrat;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
     font-size: 100%;
 }
@@ -139,13 +137,13 @@ button {
 /* for top bar (nav) */
 
 .navbar {
-    overflow: hidden;
     background-color: #333;
-    position: fixed;
+    position: sticky;
     /* Set the navbar to fixed position */
     top: 0;
     /* Position the navbar at the top of the page */
     width: 100%;
+    scroll-snap-align: start;
     /* Full width */
 }
 
@@ -154,7 +152,7 @@ button {
 
 .navbar a {
     float: left;
-    display: block;
+    display: fixed;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
