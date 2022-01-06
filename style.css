@@ -16,6 +16,7 @@ html {
     scroll-snap-align: start;
     text-align: center;
     position: relative;
+    color: #fff;
 }
 
 .left {
@@ -63,6 +64,16 @@ h6 {
 
 h1 {
     margin: 15px 0px 0px 0px;
+}
+
+#first1 {
+    background-image: url("resources/Slide1.jpg");
+    background-size: cover;
+}
+
+#second1 {
+    background-image: url('resources/Slide2.jpg');
+    background-size: cover;
 }
 
 
@@ -131,7 +142,7 @@ button {
 /* for top bar (nav) */
 
 .navbar {
-    background-color: #333;
+    background-color: #fff;
     position: sticky;
     /* Set the navbar to fixed position */
     top: 0;
@@ -180,22 +191,22 @@ button {
 }
 
 .scroll_item {
-    border: 3px solid #000;
+    border: 3px solid #fff;
     width: 10px;
     height: 10px;
     margin: 5px;
 }
 
 .scroll_item:hover {
-    background: #333;
+    background: #ddd;
 }
 
 .scroll_item_active {
-    border: 3px solid #333;
+    border: 3px solid #ddd;
     width: 10px;
     height: 10px;
     margin: 5px;
-    background-color: #333;
+    background-color: #ddd;
 }
 
 
