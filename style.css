@@ -71,7 +71,7 @@ h1 {
     background-size: cover;}
 
 #second1 {
-    background-image: url('./resources/Slide2.JPG');
+    background-image: url("./resources/Slide2.JPG");
     background-size: cover;
 }
 
