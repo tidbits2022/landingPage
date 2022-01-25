@@ -9,6 +9,58 @@ html {
     font-size: 100%;
 }
 
+
+/* here the rules for small windows */
+
+@media (max-width: 500px) {
+    #first1 {
+        background-color: #673BB7;
+    }
+    #second1 {
+        background-color: #FFCCBB;
+        color: black;
+    }
+    #third1 {
+        background-color: #E3FCFD;
+        color: black;
+    }
+    #fourth1 {
+        background-color: #8C9EFF;
+    }
+    #fifth1 {
+        background-color: #FFE0B2;
+        color: black;
+    }
+}
+
+
+/* here the rules for windows between 500px and 900px */
+
+@media (min-width: 500px) {
+    #first1 {
+        background-image: url('./resources/Slide2.JPG');
+        background-size: cover;
+    }
+    #second1 {
+        background-image: url('./resources/Slide4.JPG');
+        background-size: cover;
+        color: black;
+    }
+    #third1 {
+        background-image: url('./resources/Slide6.JPG');
+        background-size: cover;
+        color: black;
+    }
+    #fourth1 {
+        background-image: url('./resources/Slide7.JPG');
+        background-size: cover;
+    }
+    #fifth1 {
+        background-image: url('./resources/Slide8.JPG');
+        background-size: cover;
+    }
+}
+
 .section1 {
     border-bottom: 1px solid white;
     padding: 1rem;
@@ -50,7 +102,7 @@ body {
 }
 
 a {
-    color: #7b9d6f;
+    color: #E3F1FD;
     text-decoration: none;
 }
 
@@ -66,14 +118,8 @@ h1 {
     margin: 15px 0px 0px 0px;
 }
 
-#first1 {
-    background-image: url("./resources/Slide1.jpg");
-    background-size: cover;
-}
-
-#second1 {
-    background-image: url('./resources/Slide2.jpg');
-    background-size: cover;
+.left {
+    position: relative;
 }
 
 
@@ -275,14 +321,10 @@ ol {
 
 .cd-horizontal-timeline .events-wrapper::before {
     left: 0;
-    background-image: -webkit-linear-gradient( left, #f8f8f8, rgba(248, 248, 248, 0));
-    background-image: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0));
 }
 
 .cd-horizontal-timeline .events-wrapper::after {
     right: 0;
-    background-image: -webkit-linear-gradient( right, #f8f8f8, rgba(248, 248, 248, 0));
-    background-image: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0));
 }
 
 .cd-horizontal-timeline .events {
@@ -307,7 +349,7 @@ ol {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #7b9d6f;
+    background-color: #ffffff;
     -webkit-transform: scaleX(0);
     -moz-transform: scaleX(0);
     -ms-transform: scaleX(0);
@@ -330,7 +372,7 @@ ol {
     text-align: center;
     font-size: 1rem;
     padding-bottom: 15px;
-    color: #383838;
+    color: #ffffff;
     /* fix bug on Safari - text flickering while timeline translates */
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
@@ -355,15 +397,15 @@ ol {
     width: 12px;
     border-radius: 50%;
     border: 2px solid #dfdfdf;
-    background-color: #f8f8f8;
+    background-color: #B3C0FF;
     -webkit-transition: background-color 0.3s, border-color 0.3s;
     -moz-transition: background-color 0.3s, border-color 0.3s;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
 .no-touch .cd-horizontal-timeline .events a:hover::after {
-    background-color: #7b9d6f;
-    border-color: #7b9d6f;
+    background-color: #B3C0FF;
+    border-color: #B3C0FF;
 }
 
 .cd-horizontal-timeline .events a.selected {
@@ -371,12 +413,12 @@ ol {
 }
 
 .cd-horizontal-timeline .events a.selected::after {
-    background-color: #7b9d6f;
-    border-color: #7b9d6f;
+    background-color: #B3C0FF;
+    border-color: #B3C0FF;
 }
 
 .cd-horizontal-timeline .events a.older-event::after {
-    border-color: #7b9d6f;
+    border-color: #B3C0FF;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -412,6 +454,7 @@ ol {
     -webkit-transition: border-color 0.3s;
     -moz-transition: border-color 0.3s;
     transition: border-color 0.3s;
+    /* LAM HERE */
 }
 
 .cd-timeline-navigation a::after {
@@ -446,7 +489,7 @@ ol {
 }
 
 .no-touch .cd-timeline-navigation a:hover {
-    border-color: #7b9d6f;
+    border-color: #B3C0FF;
 }
 
 .cd-timeline-navigation a.inactive {
@@ -550,7 +593,7 @@ ol {
 
 .cd-horizontal-timeline .events-content p {
     font-size: 1rem;
-    color: #959595;
+    color: #ffffff;
 }
 
 .cd-horizontal-timeline .events-content em,
