@@ -118,9 +118,19 @@ h1 {
     margin: 15px 0px 0px 0px;
 }
 
+<<<<<<< HEAD
 .left {
     position: relative;
 }
+=======
+#first1 {
+    background-image: url("./resources/Slide1.JPG");
+    background-size: cover;}
+
+#second1 {
+    background-image: url("./resources/Slide2.JPG");
+    background-size: cover;}
+>>>>>>> 621f13301b81378cadfcf9ec2aa2b3f35ff979bd
 
 
 /* for candied buttons */
